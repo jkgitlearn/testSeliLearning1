@@ -1,0 +1,78 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="testSeliLearning1" verbose="1" >       <!--parallel="tests" add these after verbose=1 if u want test parallesl testing> -->
+ <test name="testNGLearn">
+ 
+ <groups>
+ <run>
+ <!-- include name="validations"/>-->
+ <!-- exclude name="smoke"/>-->
+  
+ </run> 
+ </groups>
+ 
+    <classes>
+    
+      <!--  class name="testNGlearn.Test_NG_1"/>          
+      <class name="testNGlearn.Test_NG_2"/>  -->   
+      <!--class name="testNGlearn.Test_NG_3"/> -->                  <!-- comment  -->
+      <!-- class name="testNGlearn.Test_NG_BA_Mthod"></class>
+      <class name="testNGPractice.GoogleTest"/>
+      <class name="testNGlearn.Test_NG_MixedMthod"/>
+      <class name="testNGPractice.TestNG_Basics_Annotations"/>
+      <class name="testNGlearn.Group_HomePageTest"></class>
+      <class name="testNGlearn.Group_LoginPageTest"></class>
+      <class name="testNGlearn.Group_RegisterPageTest"></class>
+      <class name="testNGlearn.Depndency_TestNGTest"></class>-->
+                
+    </classes>
+  </test>
+  
+  
+  <!--test name="testNGPractice">  
+    <classes> 
+    
+       <class name="testNGPractice.GoogleTest"/>
+       <class name="testNGPractice.TestNG_Basics_Annotations"></class>  
+       <class name="testNGPractice.TestNG_Features_Dependenci"></class>  
+       <class name="testNGPractice.TestNG_Depend_failed"></class>  
+       <class name="testNGPractice.TestNG_Priority_Groups"></class>  
+       <class name="testNGPractice.TestNG_Asserts"></class>  
+       <class name="testNGPractice.TestNG_InvocationCount"></class> 
+       <class name="testNGPractice.TestNG_Exceptions"></class>  
+                 
+    </classes>
+  </test>  -->
+  
+  
+  <test name="testNGPractice-chrome"> 
+  <parameter name="browser" value="chrome"></parameter> 
+    <classes>
+   
+        <class name="testNGPractice.GoogleTest"></class>  
+   
+    </classes>
+  </test>
+  
+  <test name="testNGPractice-firefox"> 
+   <parameter name="browser" value="firefox"></parameter> 
+    <classes>
+   
+        <class name="testNGPractice.GoogleTest"></class>  
+   
+    </classes>
+  </test>
+  
+  <test name="testNGPractice-edge">  
+   <parameter name="browser" value="edge"></parameter>
+    <classes>
+   
+        <class name="testNGPractice.GoogleTest"></class>  
+   
+    </classes>
+  </test>
+   
+   
+</suite>
+
+
